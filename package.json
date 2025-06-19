@@ -4,10 +4,11 @@
   "description": "forpowerpop",
   "main": "index.js",
   "scripts": {
+    "postinstall": "chmod +x ./node_modules/.bin/evershop",
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "evershop install",
     "build": "evershop build",
-    "start": "evershop start -p 3003",
+    "start": "evershop start",
     "start:debug": "evershop start --debug",
     "dev": "evershop dev",
     "user:create": "evershop user:create",
